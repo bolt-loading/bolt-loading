@@ -1,9 +1,9 @@
 import React from 'react';
-import Example from '../lib';
+import BoltLoading, { Loadings } from '../lib';
 
 const App = () => (
     <div>
-        <Example />
+        <BoltLoading isShow={true} loadingAnimation={Loadings.KitchenLoading} />
     </div>
 );
 

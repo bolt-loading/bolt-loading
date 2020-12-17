@@ -1,13 +1,26 @@
 import "./style/style.scss";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Loadings from "./loadings";
 
 const Index = props => {
+
+    let [isShow, setIsShow] = useState(false);
+
+    useEffect(() => props.isShow && setIsShow(props.isShow), [props.isShow])
+
     return (
-        <div className="loading-container">
-            <Loadings.KitchenLoading />
-        </div>
+        isShow && (
+            <div className="loading-container">
+                {
+                    props.loadingAnimation ? <props.loadingAnimation /> : <Loadings.AppleLoading />
+                }
+            </div>
+        )
     )
+}
+
+export {
+    Loadings
 }
 
 export default Index;
