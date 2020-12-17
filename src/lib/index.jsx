@@ -1,8 +1,12 @@
+import "./style/style.scss";
 import React from "react";
+import Loadings from "./loadings";
 
 const Index = props => {
     return (
-        <h1>Bolt Loading</h1>
+        <div className="loading-container">
+            <Loadings.KitchenLoading />
+        </div>
     )
 }
 
