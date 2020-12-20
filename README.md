@@ -2,6 +2,4 @@
 
 <h3 align="center">Bolt Loading</h3>
 
-Loading animations for React projects.
-
-Coming soon.
+<p align="center">Loading animations for React projects. Coming soon.</p>
