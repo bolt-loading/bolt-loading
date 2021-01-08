@@ -4,7 +4,7 @@
 Amazing loading animations for React. Waiting is less boring now.
 
 # Demo
-<a href="https://bolt-loading.github.io/animations" target="blank"></a>
+<a href="https://bolt-loading.github.io/animations" target="blank">Animations</a>
 
 # Quick Start
 

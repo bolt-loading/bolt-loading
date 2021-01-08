@@ -1,6 +1,6 @@
 {
     "name": "bolt-loading",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "main": "build/index.js",
     "scripts": {
         "start": "node scripts/start.js",
@@ -10,6 +10,7 @@
     },
     "license": "MIT",
     "dependencies": {},
+    "homepage": "https://bolt-loading.github.io/",
     "devDependencies": {
         "@babel/core": "7.6.0",
         "@svgr/webpack": "4.3.2",
