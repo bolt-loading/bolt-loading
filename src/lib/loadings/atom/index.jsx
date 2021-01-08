@@ -7,7 +7,6 @@ const Atom = props => {
             <div className="inner two"></div>
             <div className="inner three"></div>
         </div>
-
     )
 }
 
