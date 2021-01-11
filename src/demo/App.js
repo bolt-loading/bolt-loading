@@ -3,7 +3,7 @@ import BoltLoading, { Loadings } from '../lib';
 
 const App = () => (
     <div>
-        <BoltLoading isShow={true} loadingAnimation={Loadings.AtomLoading} />
+        <BoltLoading hasContainer={false} isShow={true} loadingAnimation={Loadings.AtomLoading} />
     </div>
 );
 

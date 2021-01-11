@@ -4,23 +4,27 @@ import Loadings from "./loadings";
 
 const Index = props => {
 
-    let [isShow, setIsShow] = useState(false);
+  let [isShow, setIsShow] = useState(false);
 
-    useEffect(() => props.isShow && setIsShow(props.isShow), [props.isShow])
+  useEffect(() => props.isShow && setIsShow(props.isShow), [props.isShow])
 
-    return (
-        isShow && (
-            <div className="loading-container">
-                {
-                    props.loadingAnimation ? <props.loadingAnimation /> : <Loadings.AppleLoading />
-                }
-            </div>
+  return (
+    isShow && (
+      props.hasContainer ? (
+        <div className="loading-container">
+          {
+            props.loadingAnimation ? <props.loadingAnimation /> : <Loadings.AppleLoading />
+          }
+        </div>
+      ) : (
+          props.loadingAnimation ? <props.loadingAnimation /> : <Loadings.AppleLoading />
         )
     )
+  )
 }
 
 export {
-    Loadings
+  Loadings
 }
 
 export default Index;
