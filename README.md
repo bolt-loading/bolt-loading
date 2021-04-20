@@ -16,6 +16,7 @@ Amazing loading animations for React. Waiting is less boring now.
 # Usage
  
 ```
+import 'bolt-loading/build/index.css';
 import BoltLoading from 'bolt-loading';
 
 <BoltLoading isShow={true} />
